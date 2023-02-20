@@ -10,7 +10,7 @@ MOVIES=('Batman' 'Sex And The City' 'JFK' 'Poltergeist' 'Germany')
 cd samples/animals 
 for id in "${ANIMALS[@]}"
 do
-echo $id >> $id.txt
+echo $id >> "$id.txt"
 done
 
 cd countries
@@ -22,5 +22,5 @@ done
 cd movies
 for id in "${MOVIES[@]}"
 do
-echo $id >> $id.txt
+echo $id >> "$id.txt"
 done
